@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    
+    <style>
+        fieldset{
+            border-radius: 30px;
+            width: 65%;
+            margin: 10px auto;
+            background-color: rgb(105, 102, 102);
+
+        }
+        legend{
+            font-style: italic;
+            color:rgb(6, 6, 6);
+        }
+        #sub:hover{
+           background-color: brown;
+        }
+        
+        h1{
+            font-style: oblique;
+        }
+        label{
+            font-size: large;
+            width: 170px;
+            display: inline-block;
+            color: rgb(1, 1, 1);
+        }
+
+        body{
+            background-color: rgb(153, 190, 211);
+        }
+        
+
+        
+    </style>
+
+</head>
+<body bgcolor="B4B4B3">
+    <center><legend><h1>APPLICATION FORM</h1></legend></center>
+    <form action="usermessage.html">
+        <fieldset>
+            <legend><h1>Personal Details</h1></legend>
+            <label for="Salutation">Salutation</label><br>
+            <select name="sal" id="sal">
+                <option value="None">--None--</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr.">Dr.</option>
+            </select><br><br>
+
+            <label for="fname">First Name</label>
+            <input type="text" requried placeholder="Ex:Nishu" id="fname" name="fname" ><br><br>
+
+            <label for="mname">Middel Name</label>
+            <input type="text"  id="mname" name="mname" ><br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text"  id="lname" name="lname" ><br><br>
+
+            <label for="email">Email id</label>
+            <input type="text" id="email id" name="email id"><br><br>
+        
+            <label for="dob">DOB</label>
+            <input type="date"  id="dob" name="dob" ><br><br>
+            
+            <label for="">Address</label><br>
+            <textarea name="add" id="add" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><h1>Parents Details</h1></legend>
+            <label for="Father Name">Fathers Name</label>
+            <input type="text" id="Father Name" name="Father Name">
+            
+            <br><br>
+            <label for="Mother Name">Mother Name</label>
+            <input type="text"  id="Mother Name" name="Mother Name">
+
+            <br><br>
+            <label for="Mobile Number">Mobiler Number</label>
+            <input type="text"  name="Mobile Number" id="Mobile Number">
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h1>Education Details</h1></legend>
+            <label for="">Department</label><br>
+            
+            <input type="radio" id="cs" name="cs">
+            <label for="CS">CS</label><br>
+
+            <input type="radio" id="civil" name="cs">
+            <label for="civil">Civil</label><br>
+
+            <input type="radio" id="mech" name="cs">
+            <label for="mech">Mech</label><br><br>
+
+            <label for="yop">YOG</label>
+            <input list="yog" id="yop" name="yop"><br><br>
+            <datalist id="yog">
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+            </datalist>
+
+            <label for="">Skills:</label><br>
+            <input type="radio" id="html" name="html" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="css" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="javascript" name="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+
+        <center><button type="submit" id="sub">Submit</button></center>
+    </form>
+   
+    
+</body>
+</html>
